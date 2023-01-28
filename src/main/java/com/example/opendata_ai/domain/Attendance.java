@@ -14,9 +14,8 @@ public class Attendance extends BaseDomain {
 
     @Id
     @Column(name = "ID", unique = true)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
     @Column(name = "STUDENT_ID")
     private Long studentId;
 

@@ -8,6 +8,7 @@ public class OpenDataAiApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(OpenDataAiApplication.class, args);
+        System.out.println("System is started");
     }
 
 }

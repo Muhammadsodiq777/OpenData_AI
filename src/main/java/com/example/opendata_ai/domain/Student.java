@@ -8,7 +8,7 @@ import javax.persistence.*;
 
 @Getter
 @Setter
-@Entity(name = "OD_USER")
+@Entity(name = "OD_STUDENT")
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
@@ -16,7 +16,7 @@ public class Student extends BaseDomain {
 
     @Id
     @Column(name = "ID", unique = true)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column(name = "FIO")

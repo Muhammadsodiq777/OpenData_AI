@@ -9,14 +9,14 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Data
-@Entity(name = "OD_QR_CODE")
+@Entity(name = "OD_TIME_TABLE")
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 public class TimeTable  extends BaseDomain {
     @Id
     @Column(name = "ID", unique = true)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column(name = "TEACHER_ID")

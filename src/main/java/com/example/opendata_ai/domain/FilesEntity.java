@@ -13,10 +13,9 @@ import java.util.UUID;
 @NoArgsConstructor
 @Builder
 public class FilesEntity extends BaseDomain {
-
     @Id
     @Column(name = "ID", unique = true)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column(name = "NAME_UUID", unique = true)
