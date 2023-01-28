@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class OpenDataAiApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(OpenDataAiApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(OpenDataAiApplication.class, args);
+    }
 
 }
