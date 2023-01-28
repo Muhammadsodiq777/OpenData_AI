@@ -27,7 +27,4 @@ public class Lesson extends BaseDomain {
     @Column(name = "LESSON_TIME")
     private LocalDateTime lessonTime;
 
-    @Column(name = "ROOM_ID")
-    private Integer roomId;
-
 }

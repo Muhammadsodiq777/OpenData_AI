@@ -19,6 +19,7 @@ public class Files extends BaseDomain {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "NAME_UUID", unique = true)
     @Builder.Default
     private String nameUUID = UUID.randomUUID().toString();
 

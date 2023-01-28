@@ -1,35 +1,29 @@
 package com.example.opendata_ai.domain;
 
-
 import com.example.opendata_ai.domain.base.BaseDomain;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Getter
-@Setter
-@Entity(name = "OD_USER")
+@Data
+@Entity(name = "OD_QR_CODE")
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Student extends BaseDomain {
+public class QrCode extends BaseDomain {
 
     @Id
     @Column(name = "ID", unique = true)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "FIO")
-    private String fio;
+    @Column(name = "QR_UUID", unique = true)
+    private String qrUUid;
 
-    @Column(name = "EMAIL")
-    private String email;
-
-    @Column(name = "PHINE_NUMBER")
-    private String phoneNumber;
-
-    @Column(name = "IS_ACTIVE")
+    @Column(name = "isActive")
     private Integer isActive;
-
 
 }
