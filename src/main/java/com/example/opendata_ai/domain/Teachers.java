@@ -1,6 +1,5 @@
 package com.example.opendata_ai.domain;
 
-
 import com.example.opendata_ai.domain.base.BaseDomain;
 import lombok.*;
 
@@ -8,12 +7,11 @@ import javax.persistence.*;
 
 @Getter
 @Setter
-@Entity(name = "OD_USER")
+@Entity(name = "OD_TEACHERS")
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Student extends BaseDomain {
-
+public class Teachers extends BaseDomain {
     @Id
     @Column(name = "ID", unique = true)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,11 +26,6 @@ public class Student extends BaseDomain {
     @Column(name = "PHINE_NUMBER")
     private String phoneNumber;
 
-    @Column(name = "IS_ACTIVE")
-    private Integer isActive;
-
     @Column(name = "LESSON_ID")
     private Long lessonId;
-
-
 }

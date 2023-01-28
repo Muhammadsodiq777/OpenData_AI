@@ -13,6 +13,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -22,18 +23,10 @@ public abstract class BaseDomain implements Serializable {
     @JsonIgnore
     @Column(updatable = false)
     @CreationTimestamp
-    private Timestamp createdAt;
+      private LocalDateTime createdAt;
 
     @JsonIgnore
     @UpdateTimestamp
-    private Timestamp updatedAt;
+      private LocalDateTime updatedAt;
 
-    @JsonIgnore
-    @CreatedBy
-    @Column(updatable = false)
-    private String createdById;
-
-    @JsonIgnore
-    @LastModifiedBy
-    private String updateById;
 }
