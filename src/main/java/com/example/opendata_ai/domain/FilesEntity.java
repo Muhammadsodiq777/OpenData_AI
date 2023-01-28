@@ -12,7 +12,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Files extends BaseDomain {
+public class FilesEntity extends BaseDomain {
 
     @Id
     @Column(name = "ID", unique = true)
